@@ -1,0 +1,23 @@
+<div class="container" style="width: 80%; align-content: center; margin-top: 2%;">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Individuo</th>
+              <th scope="col">ADN</th>
+              <th scope="col">Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let gen of genMutante">
+                <ng-container >
+                  <td scope="row">{{gen.id}}</td>
+                  <td>{{gen.individuo}}</td>
+                  <td>{{gen.adn}}</td>
+                  <td>{{gen.esMutante}}</td>
+                </ng-container>
+              </tr>
+        </tbody>
+      </table>
+     
+</div>

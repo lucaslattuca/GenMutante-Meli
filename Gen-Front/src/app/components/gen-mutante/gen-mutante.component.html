@@ -1,0 +1,41 @@
+<div class="container" style="width: 40%; align-content: center; margin-top:50px;">
+  <table class="table table-striped table-bordered"> 
+      <thead> 
+        <tr> 
+        <th>Cadena ADN</th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr *ngFor="let fila of campos; let i = index"> 
+        <td> 
+          <input [(ngModel)]="fila.code" class="form-control" type="text" name="{{fila.code}}"/> 
+        </td>  
+        <td> 
+          <button class="btn btn-default" type="button" (click)="eliminarFila(i)">Eliminar</button> 
+        </td> 
+        </tr> 
+        <tr> 
+        <td> 
+          <input class="form-control" type="text" id="fila" [(ngModel)]="genMutante.adn" name="fila" /> 
+        </td> 
+        <td> 
+          <button class="btn btn-default" type="button" (click)="agregarFila()">Agregar</button> 
+        </td> 
+        </tr> 
+      </tbody> 
+  </table> 
+</div>
+<div class="container"  style="width: 50%; align-content: center; margin-top:50px;">
+    <form class="form-inline" style="margin-top: 50px;">
+        <div class="form-group mb-2">
+          <label for="individuoLb" class="sr-only">Individuo</label>
+          <input type="text" readonly class="form-control-plaintext" id="individuoLb" value="Individuo">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="individuo" class="sr-only"></label>
+          <input type="text" class="form-control" id="individuo" [(ngModel)]="genMutante.individuo" name="individuo" placeholder="Individuo">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" (click)="enviarMuestra()">Enviar</button>
+      </form>
+</div>
+
