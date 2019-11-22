@@ -15,7 +15,7 @@
     <description>Deteccion Gen Mutante</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.RC2</spring-cloud.version>
     </properties>
 
@@ -138,29 +138,7 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.3.1</version>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <artifactId>maven-resources-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-resources</id>
-                        <phase>validate</phase>
-                        <goals><goal>copy-resources</goal></goals>
-                        <configuration>
-                            <outputDirectory>${build.directory}/classes/static/</outputDirectory >
-                            <resources>
-                                <resource>
-                                    <directory>../portal-app/dist</directory>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                </executions>
+                <version>2.2.0</version>
             </plugin>
         </plugins>
     </build>
