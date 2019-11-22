@@ -3,7 +3,7 @@
 
 Código realizado en Java Spring Boot y Angular 7 por Lucas Lattuca
 
-# Funcionalidades
+## Funcionalidades
 
   - Se ingresan las cadenas de adn y el nombre del individuo 
   - Listado con los genes ingresados
@@ -73,7 +73,7 @@ Verify the deployment by navigating to your server address in your preferred bro
 
 See [KUBERNETES.md](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
 
-##### Errores
+## Errores
  * La grilla presenta un error, el ultimo campo no se envia al formulario
  * Tampoco se convierte a mayúsculas, esto es un indicador de que no se enviaría para ser procesada
 ![error en grilla](https://github.com/lukalpda/GenMutante-Meli/blob/master/Gen-Back/src/main/resources/static/error%20en%20grilla.png)
