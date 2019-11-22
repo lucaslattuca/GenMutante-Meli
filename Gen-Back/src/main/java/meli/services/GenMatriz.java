@@ -57,7 +57,6 @@ public class GenMatriz {
     }
 
     public boolean resolver(String gen) {
-        gen.toLowerCase();
         int contador=0;
         for (int[] pos : posiblesSolucionesDe(gen)) {
 
@@ -104,10 +103,6 @@ public class GenMatriz {
                     return true;
                 }
             }
-            //si encuentra 2 o más coincidencias sale del método
-            if(contador>=2){
-                return true;
-            }
         }
 
         System.out.println( "El Gen '" + gen + "' no fue encontrado en la matriz");
@@ -124,9 +119,9 @@ public class GenMatriz {
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                if (matriz[i][j] == primeraLetra) {
+                //if (matriz[i][j] == primeraLetra) {
                     indiceInvertido.add(new int[]{i, j}); // Guardar la posicion de la letra en la matriz.
-                }
+                //}
             }
         }
         return toArrayInt(indiceInvertido);

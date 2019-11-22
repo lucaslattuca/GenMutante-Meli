@@ -8,7 +8,7 @@
       <tbody> 
         <tr *ngFor="let fila of campos; let i = index"> 
         <td> 
-          <input [(ngModel)]="fila.code" class="form-control" type="text" name="{{fila.code}}"/> 
+          <input [(ngModel)]="fila.code" class="form-control" type="text" name="{{fila.code}}" onkeyup="javascript:this.value=this.value.toUpperCase();"/> 
         </td>  
         <td> 
           <button class="btn btn-default" type="button" (click)="eliminarFila(i)">Eliminar</button> 
