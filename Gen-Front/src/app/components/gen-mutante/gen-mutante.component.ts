@@ -9,8 +9,8 @@ import { GenMutanteService } from 'src/app/services/gen-mutante.service';
 export class GenMutanteComponent implements OnInit {
 
   genMutante = {} as GenMutante;
-  private campos: any = []; 
-  private fila: any = {}; 
+  campos: any = []; 
+  fila: any = {}; 
 
   constructor(private genService: GenMutanteService) { }
 
