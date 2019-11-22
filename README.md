@@ -1,2 +1,2 @@
 # GenMutante-Meli
- GenMutante - Lucas Lattuca
+ Obtencion del gen mutante - Lucas Lattuca
