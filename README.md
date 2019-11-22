@@ -7,6 +7,10 @@ Código realizado en Java Spring Boot y Angular 7 por Lucas Lattuca
 
   - Se ingresan las cadenas de adn y el nombre del individuo 
   - Listado con los genes ingresados
+  
+![menu de navegacion](https://github.com/lukalpda/GenMutante-Meli/blob/master/Gen-Back/src/main/resources/static/menu.png)
+![registros](https://github.com/lukalpda/GenMutante-Meli/blob/master/Gen-Back/src/main/resources/static/registros.png)
+![envio de datos](https://github.com/lukalpda/GenMutante-Meli/blob/master/Gen-Back/src/main/resources/static/envio%20de%20datos.png)
 
 
 ### Desarrollo
