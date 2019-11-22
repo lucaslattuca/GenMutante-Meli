@@ -5,5 +5,6 @@ meli\config\CORSConfig$1.class
 meli\services\GenService.class
 meli\config\CORSConfig.class
 meli\GenMutanteApplication.class
+meli\ServletInitializer.class
 meli\controllers\GenController.class
 meli\entities\Gen.class
